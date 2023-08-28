@@ -21,3 +21,13 @@ The Review class represents a review. It has a class attribute all_reviews to ke
 The __init__ method initializes a review with a customer, restaurant, and a rating.
 The customer and restaurant methods are used to retrieve the associated customer and restaurant for a review.
 The all class method returns a list of all review instances.
+
+##Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements.
+
+##Author
+mwaniki-Titus
+
+GitHub: mwaniki-Titus
+##License
+This project is licensed under the MIT License.
