@@ -16,7 +16,7 @@ class Customer:
     def full_name(self):
         return f"{self.given_name} {self.family_name}"
 
-    @classmethod
+    
     def all(cls):
         return cls.all_customers
 
@@ -26,21 +26,18 @@ class Customer:
     def add_review(self, restaurant, rating):
         review = review(self, restaurant, rating)
         self.reviews.append(review)
+class Review:
+    def __init__(self, customer, restaurant, rating):
+        self.customer = customer
+        self.restaurant = restaurant
+        self.rating = rating
+
 # Testing Customer class methods
 customer1 = Customer("John", "Doe")
 customer2 = Customer("Jane", "Doe")
 customer3 = Customer("John", "Doe")
 
-print(f"\n{customer1.full_name()} has authored {customer1.num_reviews()} reviews.")
-print(f"\n{customer2.full_name()} has authored {customer2.num_reviews()} reviews.")
-print(f"\n{customer1.full_name()} has authored {customer1.num_reviews()} reviews.")
-found_customer = Customer.find_by_name("John Doe")
-if found_customer:
-    print(f"Found customer: {found_customer.full_name()}")
-else:
-    print("Customer not found.")
-
-all_johns = Customer.find_all_by_given_name("John")
-print("\nCustomers with the given name 'John':")
-for john in all_johns:
-    print(john.full_name())      
+print(f"{customer1.full_name()} has authored {len(customer1.add_review)} reviews.")
+print(f"{customer2.full_name()} has authored {len(customer2.add_review)} reviews.")
+print(f"{customer1.full_name()} has authored {len(customer1.add_review)} reviews.")
+   
