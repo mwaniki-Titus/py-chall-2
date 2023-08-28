@@ -24,7 +24,7 @@ class Customer:
         return [review.restaurant for review in self.reviews]
 
     def add_review(self, restaurant, rating):
-        review = Review(self, restaurant, rating)
+        review = review(self, restaurant, rating)
         self.reviews.append(review)
 # Testing Customer class methods
 customer1 = Customer("John", "Doe")
