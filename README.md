@@ -23,11 +23,15 @@ The customer and restaurant methods are used to retrieve the associated customer
 The all class method returns a list of all review instances.
 
 ##Contributing
+
 Contributions are welcome! If you find any issues or have suggestions for improvements.
 
 ##Author
+
 mwaniki-Titus
 
-GitHub: mwaniki-Titus
+GitHub: 
+mwaniki-Titus
 ##License
+
 This project is licensed under the MIT License.
